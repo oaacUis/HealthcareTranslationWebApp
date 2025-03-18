@@ -1,12 +1,13 @@
-from fastapi import APIRouter, UploadFile, File, HTTPException
+from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
 from fastapi.responses import FileResponse
 from services.speech_service import process_input_audio
 from services.speech_service import process_output_audio
+from auth import get_current_user
 import uuid
 import shutil
 import os
 
-router = APIRouter()
+router = APIRouter(prefix="/speech", tags=["speech"])
 
 UPLOAD_DIR = "temp_uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
@@ -16,7 +17,8 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 
 @router.post("/speech-to-text")
-async def speech_to_text(audio_file: UploadFile = File(...)):
+async def speech_to_text(audio_file: UploadFile = File(...),
+                         current_user: dict = Depends(get_current_user)):
     file_path = os.path.join(UPLOAD_DIR, audio_file.filename)
 
     try:
@@ -37,7 +39,8 @@ async def speech_to_text(audio_file: UploadFile = File(...)):
 
 
 @router.post("/text-to-speech")
-async def text_to_speech(input_text: str):
+async def text_to_speech(input_text: str,
+                         current_user: dict = Depends(get_current_user)):
 
     try:
         response = process_output_audio(input_text)

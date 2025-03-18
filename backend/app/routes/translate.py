@@ -1,8 +1,9 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 from googletrans import Translator
 from pydantic import BaseModel
+from auth import get_current_user
 
-router = APIRouter()
+router = APIRouter(prefix="/translate", tags=["translate"])
 translator = Translator()
 
 
@@ -14,7 +15,8 @@ class TranslationRequest(BaseModel):
 
 
 @router.post("/translate")
-async def translate_text(request: TranslationRequest):
+async def translate_text(request: TranslationRequest,
+                         current_user: dict = Depends(get_current_user)):
     try:
         translated = translator.translate(request.text,
                                           src=request.src_lang,
