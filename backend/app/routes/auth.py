@@ -9,7 +9,7 @@ from ..database import SessionLocal
 from ..database import Users
 from passlib.context import CryptContext
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
-from jose import jwt, JWTError
+from jose import jwt, jws, JWTError
 import dotenv
 import os
 
@@ -56,7 +56,9 @@ db_dependency = Annotated[Session, Depends(get_db)]
 async def create_user(db: db_dependency,
                       create_user_request: CreateUserRequest):
 
-    existing_user = db.query(Users).filter(Users.username == create_user_request.username).first()
+    existing_user = db.query(Users).filter(
+        Users.username == create_user_request.username
+    ).first()
     if existing_user:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
                             detail="Username already exists")
@@ -103,7 +105,7 @@ def create_access_token(username: str, user_id: int, expires_delta: timedelta):
 
 async def get_current_user(token: Annotated[str, Depends(oauth2_bearer)]):
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        payload = jws.verify(token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str = payload.get("sub")
         user_id: int = payload.get("id")
         if username is None or user_id is None:
