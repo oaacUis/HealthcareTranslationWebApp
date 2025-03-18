@@ -4,3 +4,6 @@ elevenlabs==1.54.0
 python-dotenv==1.0.1
 uuid
 googletrans==4.0.2
+sqlalchemy==2.0.39
+python_jose==3.4.0
+passlib==1.7.4

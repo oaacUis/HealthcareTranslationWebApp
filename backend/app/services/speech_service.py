@@ -4,14 +4,17 @@ from elevenlabs.client import ElevenLabs
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv(dotenv_path='../../.env')
 
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 
 if not ELEVENLABS_API_KEY:
     raise RuntimeError("ELEVENLABS_API_KEY is not set in the .env file")
 
-model = whisper.load_model("tiny")
+try:
+    model = whisper.load_model("tiny")
+except Exception as e:
+    print(f"Error loading the model: {str(e)}")
 
 
 def process_input_audio(file_path):
