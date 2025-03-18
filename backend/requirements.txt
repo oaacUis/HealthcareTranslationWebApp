@@ -1,0 +1,6 @@
+fastapi==0.115.11
+openai-whisper
+elevenlabs==1.54.0
+python-dotenv==1.0.1
+uuid
+googletrans==4.0.2

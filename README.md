@@ -4,7 +4,7 @@
 Develop a web-based prototype that enables real-time, multilingual translation between patients and healthcare providers. This application should convert spoken input into text, provide a live transcript, and offer a translated version with audio playback. The project will assess technical proficiency, speed, and use of generative AI for efficient development.
 
 ## Scope of Project
-You will have 48 hours to build a functional prototype of this healthcare translation app. We expect you to leverage generative AI tools for both language translation and as a coding assistant. The primary goal is rapid development while maintaining quality.
+You should build a functional prototype of this healthcare translation app. The primary goal is rapid development with generative AI tools while maintaining quality.
 
 ## Requirements
 ### Core Functionalities:
