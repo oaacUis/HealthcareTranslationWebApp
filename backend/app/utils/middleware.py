@@ -23,8 +23,9 @@ async def middleware_log(request: Request, call_next):
     log_dict = {
         "url": request.url.path,
         "method": request.method,
+        "status_code": response.status_code,
         "date": datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
-        "duration": duration,
+        "duration": round(duration, 3),
     }
     logger.info(log_dict, extra=log_dict)
     return response

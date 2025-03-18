@@ -1,17 +1,40 @@
 from fastapi import FastAPI
-from app.routes.speech import router as speech_router
-from app.routes.translate import router as translation_router
-
-app = FastAPI()
-
-# Load routers
-app.include_router(speech_router, prefix="/api")
-app.include_router(translation_router, prefix="/api")
+from fastapi.middleware.cors import CORSMiddleware
+from app.routers import speech, translate, auth
+from app.utils.logger import logger
+from app.utils.middleware import middleware_log
+import uvicorn
 
 
-def main():
-    return 0
+app = FastAPI(
+    title="Medical Translation API",
+    description="Web-based prototype that enables multilingual translation\
+        between patients and healthcare providers.",
+    version="1.0.0"
+)
+
+app.middleware("http")(middleware_log)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Could be restricted to specific domains
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Routers from modules
+app.include_router(auth.router)
+app.include_router(speech.router)
+app.include_router(translate.router)
+
+logger.info("Starting API...")
 
 
+@app.get("/")
+async def root():
+    return {"message": "Medical Translation API is running..."}
+
+# To check using uvicorn
 if __name__ == "__main__":
-    main()
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

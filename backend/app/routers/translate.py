@@ -17,6 +17,18 @@ class TranslationRequest(BaseModel):
 @router.post("/translate")
 async def translate_text(request: TranslationRequest,
                          current_user: dict = Depends(get_current_user)):
+    """
+    Translates the given text from the source language to the destination language.
+    Args:
+        request (TranslationRequest): The translation request containing the text to be translated,
+            the source language code, and the destination language code.
+        current_user (dict, optional): The current authenticated user, provided by dependency injection.
+    Returns:
+        dict: A dictionary containing the original text, the translated text, and the detected source language.
+    Raises:
+        HTTPException: If an error occurs during the translation process, an HTTP 500 error is raised
+            with details about the error.
+    """
     try:
         translated = translator.translate(request.text,
                                           src=request.src_lang,
