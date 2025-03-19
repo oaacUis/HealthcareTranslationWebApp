@@ -4,7 +4,9 @@ from elevenlabs.client import ElevenLabs
 from dotenv import load_dotenv
 import os
 
-load_dotenv(dotenv_path='../../.env')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ENV_PATH = os.path.join(BASE_DIR, ".env")
+load_dotenv(dotenv_path=ENV_PATH)
 
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 

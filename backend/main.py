@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routers import speech, translate, auth
 from app.utils.logger import logger
 from app.utils.middleware import middleware_log
+from app.database import engine, Base
 import asyncio
 import uvicorn
 
@@ -31,12 +32,13 @@ app.include_router(translate.router)
 
 logger.info("Starting API...")
 
+Base.metadata.create_all(bind=engine)
 
 @app.get("/")
 async def root():
     return {"message": "Medical Translation API is running..."}
 
-@app.get("/home") # Endpoint for the home page
+@app.get("/home")
 async def home():
     """
     Endpoint for the home page.
@@ -46,8 +48,8 @@ async def home():
     """
     await asyncio.sleep(0)  # type: ignore
     API_version = "1.0.0"
-    return {"health_check": "OK", "API_version": API_version} # Endpoint Response
+    return {"health_check": "OK", "API_version": API_version}
 
 # To check using uvicorn
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from googletrans import Translator
 from pydantic import BaseModel
-from auth import get_current_user
+from ..routers.auth import get_current_user
 
 router = APIRouter(prefix="/translate", tags=["translate"])
 translator = Translator()
@@ -30,9 +30,9 @@ async def translate_text(request: TranslationRequest,
             with details about the error.
     """
     try:
-        translated = translator.translate(request.text,
-                                          src=request.src_lang,
-                                          dest=request.dest_lang)
+        translated = await translator.translate(request.text,
+                                                src=request.src_lang,
+                                                dest=request.dest_lang)
 
         return {"original_text": request.text,
                 "translated_text": translated.text,

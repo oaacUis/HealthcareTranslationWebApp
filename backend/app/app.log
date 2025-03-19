@@ -1,0 +1,73 @@
+{"timestamp": "2025-03-18 22:38:44,075", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:38:51,537", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:38:51,588", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:43:31,671", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:43:39,041", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:43:39,091", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:44:01,422", "level": "INFO", "message": "{'url': '/', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 22:44:01', 'duration': 0.001}"}
+{"timestamp": "2025-03-18 22:44:09,387", "level": "INFO", "message": "{'url': '/docs', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 22:44:09', 'duration': 0.0}"}
+{"timestamp": "2025-03-18 22:44:09,746", "level": "INFO", "message": "{'url': '/openapi.json', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 22:44:09', 'duration': 0.011}"}
+{"timestamp": "2025-03-18 22:44:21,510", "level": "INFO", "message": "{'url': '/auth/create_user', 'method': 'POST', 'status_code': 201, 'date': '18/03/2025 22:44:21', 'duration': 0.619}"}
+{"timestamp": "2025-03-18 22:44:40,604", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '18/03/2025 22:44:40', 'duration': 0.362}"}
+{"timestamp": "2025-03-18 22:45:34,268", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 401, 'date': '18/03/2025 22:45:34', 'duration': 0.001}"}
+{"timestamp": "2025-03-18 22:48:28,862", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:48:28,915", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:49:09,549", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:49:09,602", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:58:01,035", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:58:01,097", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 22:59:16,409", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '18/03/2025 22:59:16', 'duration': 0.366}"}
+{"timestamp": "2025-03-18 22:59:16,461", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 22:59:16', 'duration': 0.0}"}
+{"timestamp": "2025-03-18 22:59:16,467", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 401, 'date': '18/03/2025 22:59:16', 'duration': 0.001}"}
+{"timestamp": "2025-03-18 23:03:11,970", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:03:12,032", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:03:19,484", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '18/03/2025 23:03:19', 'duration': 0.335}"}
+{"timestamp": "2025-03-18 23:03:19,499", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 23:03:19', 'duration': 0.001}"}
+{"timestamp": "2025-03-18 23:08:14,720", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:08:14,770", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:08:31,301", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:08:31,350", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:08:33,100", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '18/03/2025 23:08:33', 'duration': 0.336}"}
+{"timestamp": "2025-03-18 23:08:33,107", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 23:08:33', 'duration': 0.001}"}
+{"timestamp": "2025-03-18 23:09:30,594", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:09:30,650", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:12:32,903", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:12:32,957", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:17:00,991", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:17:01,040", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:17:30,414", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:17:30,462", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:19:18,196", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:19:18,243", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:20:16,444", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '18/03/2025 23:20:16', 'duration': 0.408}"}
+{"timestamp": "2025-03-18 23:20:16,453", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 23:20:16', 'duration': 0.001}"}
+{"timestamp": "2025-03-18 23:20:16,462", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 500, 'date': '18/03/2025 23:20:16', 'duration': 0.003}"}
+{"timestamp": "2025-03-18 23:26:28,671", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:26:28,726", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:27:58,430", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:27:58,482", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:29:27,841", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:29:27,893", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:30:17,448", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:30:17,497", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:34:24,149", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:34:24,197", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:36:31,316", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '18/03/2025 23:36:31', 'duration': 0.348}"}
+{"timestamp": "2025-03-18 23:36:31,325", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 23:36:31', 'duration': 0.0}"}
+{"timestamp": "2025-03-18 23:36:31,338", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 500, 'date': '18/03/2025 23:36:31', 'duration': 0.006}"}
+{"timestamp": "2025-03-18 23:37:27,242", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:37:27,299", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:37:47,216", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '18/03/2025 23:37:47', 'duration': 0.337}"}
+{"timestamp": "2025-03-18 23:37:47,225", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '18/03/2025 23:37:47', 'duration': 0.0}"}
+{"timestamp": "2025-03-18 23:37:47,617", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '18/03/2025 23:37:47', 'duration': 0.387}"}
+{"timestamp": "2025-03-18 23:37:58,769", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 401, 'date': '18/03/2025 23:37:58', 'duration': 0.002}"}
+{"timestamp": "2025-03-18 23:38:43,028", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:38:43,077", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:39:09,426", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:39:09,485", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:49:10,922", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:49:10,992", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:49:32,570", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:49:32,617", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:50:22,916", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-18 23:50:22,968", "level": "INFO", "message": "Starting API..."}

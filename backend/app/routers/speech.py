@@ -1,18 +1,21 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
 from fastapi.responses import FileResponse
-from services.speech_service import process_input_audio
-from services.speech_service import process_output_audio
-from auth import get_current_user
+from ..services.speech_service import process_input_audio
+from ..services.speech_service import process_output_audio
+from ..routers.auth import get_current_user
 import uuid
 import shutil
 import os
 
 router = APIRouter(prefix="/speech", tags=["speech"])
 
-UPLOAD_DIR = "temp_uploads"
+# Set the log file path to the backend directory
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+UPLOAD_DIR = os.path.join(BASE_DIR, "temp", "temp_uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-DOWNLOAD_DIR = "temp_downloads"
+DOWNLOAD_DIR = os.path.join(BASE_DIR, "temp", "temp_downloads")
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 

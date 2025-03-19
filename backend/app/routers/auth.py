@@ -10,6 +10,7 @@ from ..database import Users
 from passlib.context import CryptContext
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from jose import jwt, jws, JWTError
+import json
 import dotenv
 import os
 
@@ -105,7 +106,7 @@ def create_access_token(username: str, user_id: int, expires_delta: timedelta):
 
 async def get_current_user(token: Annotated[str, Depends(oauth2_bearer)]):
     try:
-        payload = jws.verify(token, SECRET_KEY, algorithms=[ALGORITHM])
+        payload = json.loads(jws.verify(token, SECRET_KEY, algorithms=[ALGORITHM]).decode('utf-8'))
         username: str = payload.get("sub")
         user_id: int = payload.get("id")
         if username is None or user_id is None:
