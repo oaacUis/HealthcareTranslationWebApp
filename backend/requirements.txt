@@ -11,3 +11,5 @@ uvicorn==0.34.0
 asyncio==3.4.3
 python-multipart==0.0.20
 bcrypt==4.3.0
+openai
+assemblyai==0.37.0

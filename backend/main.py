@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import speech, translate, auth
+from app.routers import auth, translate, speech
 from app.utils.logger import logger
 from app.utils.middleware import middleware_log
 from app.database import engine, Base

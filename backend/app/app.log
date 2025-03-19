@@ -71,3 +71,209 @@
 {"timestamp": "2025-03-18 23:49:32,617", "level": "INFO", "message": "Starting API..."}
 {"timestamp": "2025-03-18 23:50:22,916", "level": "INFO", "message": "Starting API..."}
 {"timestamp": "2025-03-18 23:50:22,968", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:09:51,836", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:09:59,693", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:09:59,776", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:10:50,456", "level": "INFO", "message": "{'url': '/docs', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:10:50', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:10:50,663", "level": "INFO", "message": "{'url': '/openapi.json', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:10:50', 'duration': 0.018}"}
+{"timestamp": "2025-03-19 00:11:19,733", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:11:19', 'duration': 0.354}"}
+{"timestamp": "2025-03-19 00:11:19,741", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:11:19', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:11:19,976", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:11:19', 'duration': 0.228}"}
+{"timestamp": "2025-03-19 00:11:20,103", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 422, 'date': '19/03/2025 00:11:20', 'duration': 0.103}"}
+{"timestamp": "2025-03-19 00:15:10,040", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:15:10,093", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:15:17,251", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:15:17', 'duration': 0.35}"}
+{"timestamp": "2025-03-19 00:15:17,260", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:15:17', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:15:17,443", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:15:17', 'duration': 0.176}"}
+{"timestamp": "2025-03-19 00:15:17,454", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 422, 'date': '19/03/2025 00:15:17', 'duration': 0.003}"}
+{"timestamp": "2025-03-19 00:23:47,173", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:23:47,228", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:23:51,985", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:23:51', 'duration': 0.331}"}
+{"timestamp": "2025-03-19 00:23:51,994", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:23:51', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:23:52,243", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:23:52', 'duration': 0.243}"}
+{"timestamp": "2025-03-19 00:26:47,653", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:26:47,707", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:26:59,609", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:26:59', 'duration': 0.353}"}
+{"timestamp": "2025-03-19 00:26:59,618", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:26:59', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 00:26:59,841", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:26:59', 'duration': 0.217}"}
+{"timestamp": "2025-03-19 00:26:59,927", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 00:26:59', 'duration': 0.078}"}
+{"timestamp": "2025-03-19 00:32:31,645", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:32:31,713", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:33:27,799", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:33:27,862", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:33:38,758", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:33:38', 'duration': 0.387}"}
+{"timestamp": "2025-03-19 00:33:38,794", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:33:38', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:33:39,024", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:33:39', 'duration': 0.222}"}
+{"timestamp": "2025-03-19 00:33:39,063", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 00:33:39', 'duration': 0.032}"}
+{"timestamp": "2025-03-19 00:38:15,717", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:38:15,769", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:38:44,738", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:38:44', 'duration': 0.326}"}
+{"timestamp": "2025-03-19 00:38:44,747", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:38:44', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:38:44,955", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:38:44', 'duration': 0.202}"}
+{"timestamp": "2025-03-19 00:38:44,989", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 00:38:44', 'duration': 0.026}"}
+{"timestamp": "2025-03-19 00:41:13,057", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:41:13,113", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:41:20,963", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:41:20', 'duration': 0.359}"}
+{"timestamp": "2025-03-19 00:41:20,971", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:41:20', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 00:41:21,197", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:41:21', 'duration': 0.221}"}
+{"timestamp": "2025-03-19 00:41:21,236", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 00:41:21', 'duration': 0.03}"}
+{"timestamp": "2025-03-19 00:42:08,844", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:42:08,891", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:42:39,969", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:42:39', 'duration': 0.333}"}
+{"timestamp": "2025-03-19 00:42:39,978", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:42:39', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:42:40,186", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:42:40', 'duration': 0.201}"}
+{"timestamp": "2025-03-19 00:42:40,197", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:42:40', 'duration': 0.002}"}
+{"timestamp": "2025-03-19 00:51:37,555", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:51:37,605", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:51:50,845", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:51:50', 'duration': 0.34}"}
+{"timestamp": "2025-03-19 00:51:50,854", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:51:50', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:51:51,095", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:51:51', 'duration': 0.234}"}
+{"timestamp": "2025-03-19 00:51:51,131", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 00:51:51', 'duration': 0.028}"}
+{"timestamp": "2025-03-19 00:52:45,485", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:52:45,543", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:52:56,479", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:52:56,526", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:53:12,679", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:53:12,725", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:53:23,590", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:53:23', 'duration': 0.347}"}
+{"timestamp": "2025-03-19 00:53:23,599", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:53:23', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:53:23,818", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:53:23', 'duration': 0.212}"}
+{"timestamp": "2025-03-19 00:53:23,851", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 00:53:23', 'duration': 0.027}"}
+{"timestamp": "2025-03-19 00:55:02,681", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:55:02,753", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:55:12,061", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:55:12', 'duration': 0.357}"}
+{"timestamp": "2025-03-19 00:55:12,071", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:55:12', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:55:12,287", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:55:12', 'duration': 0.21}"}
+{"timestamp": "2025-03-19 00:55:12,322", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 00:55:12', 'duration': 0.027}"}
+{"timestamp": "2025-03-19 00:56:51,661", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:56:51,719", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 00:56:55,476", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:56:55', 'duration': 0.336}"}
+{"timestamp": "2025-03-19 00:56:55,486", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 00:56:55', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 00:56:55,679", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 00:56:55', 'duration': 0.186}"}
+{"timestamp": "2025-03-19 00:56:55,716", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 00:56:55', 'duration': 0.029}"}
+{"timestamp": "2025-03-19 01:01:27,218", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:01:27,268", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:07:40,187", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:07:40,239", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:07:51,169", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:07:51,218", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:08:50,925", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:08:50,976", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:14:57,674", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 01:14:57,726", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:43:27,661", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:43:31,806", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:43:35,646", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:44:00,186", "level": "INFO", "message": "{'url': '/docs', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 11:44:00', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 11:44:00,643", "level": "INFO", "message": "{'url': '/openapi.json', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 11:44:00', 'duration': 0.188}"}
+{"timestamp": "2025-03-19 11:44:39,991", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:44:40,045", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:45:03,158", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:45:03', 'duration': 0.593}"}
+{"timestamp": "2025-03-19 11:45:03,223", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 11:45:03', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 11:45:03,479", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:45:03', 'duration': 0.249}"}
+{"timestamp": "2025-03-19 11:45:04,271", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 11:45:04', 'duration': 0.784}"}
+{"timestamp": "2025-03-19 11:48:19,752", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:48:19,808", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:48:25,000", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:48:25', 'duration': 0.345}"}
+{"timestamp": "2025-03-19 11:48:25,000", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 11:48:25', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 11:48:25,275", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:48:25', 'duration': 0.252}"}
+{"timestamp": "2025-03-19 11:48:26,095", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 11:48:26', 'duration': 0.813}"}
+{"timestamp": "2025-03-19 11:49:35,011", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:49:35,070", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:49:59,398", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:50:03,713", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:50:03,768", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:50:07,749", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:50:07', 'duration': 0.337}"}
+{"timestamp": "2025-03-19 11:50:07,758", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 11:50:07', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 11:50:07,991", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:50:07', 'duration': 0.227}"}
+{"timestamp": "2025-03-19 11:52:18,597", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:52:18,645", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:52:25,248", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:52:25', 'duration': 0.354}"}
+{"timestamp": "2025-03-19 11:52:25,256", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 11:52:25', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 11:52:25,536", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:52:25', 'duration': 0.275}"}
+{"timestamp": "2025-03-19 11:52:28,659", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 11:52:28', 'duration': 3.115}"}
+{"timestamp": "2025-03-19 11:56:30,404", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:56:34,738", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:56:34,795", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 11:56:38,538", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:56:38', 'duration': 0.339}"}
+{"timestamp": "2025-03-19 11:56:38,548", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 11:56:38', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 11:56:38,818", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 11:56:38', 'duration': 0.263}"}
+{"timestamp": "2025-03-19 11:56:42,589", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 11:56:42', 'duration': 3.763}"}
+{"timestamp": "2025-03-19 12:01:24,638", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:01:28,933", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:01:29,134", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:02:57,555", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:02:57', 'duration': 0.339}"}
+{"timestamp": "2025-03-19 12:02:57,564", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:02:57', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 12:02:57,836", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:02:57', 'duration': 0.266}"}
+{"timestamp": "2025-03-19 12:03:01,676", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 12:03:01', 'duration': 3.833}"}
+{"timestamp": "2025-03-19 12:17:46,473", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:17:50,657", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:17:50,792", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:17:59,349", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:17:59', 'duration': 0.386}"}
+{"timestamp": "2025-03-19 12:17:59,357", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:17:59', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 12:17:59,630", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:17:59', 'duration': 0.268}"}
+{"timestamp": "2025-03-19 12:18:05,622", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:18:05', 'duration': 5.983}"}
+{"timestamp": "2025-03-19 12:24:48,901", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:24:49,008", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:25:08,660", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:25:08', 'duration': 0.339}"}
+{"timestamp": "2025-03-19 12:25:08,668", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:25:08', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 12:25:08,920", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:25:08', 'duration': 0.245}"}
+{"timestamp": "2025-03-19 12:25:14,412", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:25:14', 'duration': 5.485}"}
+{"timestamp": "2025-03-19 12:31:17,386", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:31:17,481", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:31:27,147", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:31:27', 'duration': 0.331}"}
+{"timestamp": "2025-03-19 12:31:27,156", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:31:27', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 12:31:32,998", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:31:32', 'duration': 5.835}"}
+{"timestamp": "2025-03-19 12:31:33,561", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:31:33', 'duration': 0.556}"}
+{"timestamp": "2025-03-19 12:31:33,632", "level": "INFO", "message": "{'url': '/speech/text-to-speech', 'method': 'POST', 'status_code': 422, 'date': '19/03/2025 12:31:33', 'duration': 0.063}"}
+{"timestamp": "2025-03-19 12:38:41,458", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:38:41,564", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:39:29,648", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:39:29,753", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:40:54,487", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:40:54,619", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:41:00,473", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:41:00', 'duration': 0.343}"}
+{"timestamp": "2025-03-19 12:41:00,482", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:41:00', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 12:41:22,020", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:41:22', 'duration': 21.531}"}
+{"timestamp": "2025-03-19 12:41:22,349", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:41:22', 'duration': 0.32}"}
+{"timestamp": "2025-03-19 12:41:22,366", "level": "INFO", "message": "{'url': '/speech/text-to-speech', 'method': 'POST', 'status_code': 422, 'date': '19/03/2025 12:41:22', 'duration': 0.002}"}
+{"timestamp": "2025-03-19 12:42:52,747", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:42:52', 'duration': 0.32}"}
+{"timestamp": "2025-03-19 12:42:52,756", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:42:52', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 12:43:00,775", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:43:00', 'duration': 8.012}"}
+{"timestamp": "2025-03-19 12:43:05,517", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:43:05,616", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:43:11,634", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:43:11', 'duration': 0.374}"}
+{"timestamp": "2025-03-19 12:43:11,642", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:43:11', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 12:44:05,605", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:44:05', 'duration': 53.957}"}
+{"timestamp": "2025-03-19 12:44:05,844", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:44:05', 'duration': 0.23}"}
+{"timestamp": "2025-03-19 12:44:07,173", "level": "INFO", "message": "{'url': '/speech/text-to-speech', 'method': 'POST', 'status_code': 500, 'date': '19/03/2025 12:44:07', 'duration': 1.323}"}
+{"timestamp": "2025-03-19 12:47:11,098", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:47:11,206", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:47:16,506", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:47:16', 'duration': 0.351}"}
+{"timestamp": "2025-03-19 12:47:16,516", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:47:16', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 12:48:17,375", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:48:17', 'duration': 60.851}"}
+{"timestamp": "2025-03-19 12:48:17,653", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:48:17', 'duration': 0.269}"}
+{"timestamp": "2025-03-19 12:48:17,663", "level": "INFO", "message": "{'url': '/speech/text-to-speech', 'method': 'POST', 'status_code': 422, 'date': '19/03/2025 12:48:17', 'duration': 0.002}"}
+{"timestamp": "2025-03-19 12:52:04,560", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:52:04,690", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:52:15,303", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:52:15,400", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:53:14,925", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:53:15,025", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:54:12,252", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:54:12', 'duration': 0.37}"}
+{"timestamp": "2025-03-19 12:54:12,260", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:54:12', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 12:54:18,189", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:54:18', 'duration': 5.922}"}
+{"timestamp": "2025-03-19 12:54:18,462", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:54:18', 'duration': 0.265}"}
+{"timestamp": "2025-03-19 12:54:20,612", "level": "INFO", "message": "{'url': '/speech/text-to-speech', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:54:20', 'duration': 2.145}"}
+{"timestamp": "2025-03-19 12:56:04,946", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:56:05,042", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-19 12:56:26,982", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:56:26', 'duration': 0.325}"}
+{"timestamp": "2025-03-19 12:56:26,991", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:56:26', 'duration': 0.0}"}
+{"timestamp": "2025-03-19 12:56:32,385", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:56:32', 'duration': 5.387}"}
+{"timestamp": "2025-03-19 12:56:32,589", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:56:32', 'duration': 0.196}"}
+{"timestamp": "2025-03-19 12:56:34,630", "level": "INFO", "message": "{'url': '/speech/text-to-speech', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:56:34', 'duration': 2.033}"}
+{"timestamp": "2025-03-19 12:57:34,920", "level": "INFO", "message": "{'url': '/auth/token', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:57:34', 'duration': 0.312}"}
+{"timestamp": "2025-03-19 12:57:34,929", "level": "INFO", "message": "{'url': '/home', 'method': 'GET', 'status_code': 200, 'date': '19/03/2025 12:57:34', 'duration': 0.001}"}
+{"timestamp": "2025-03-19 12:57:39,817", "level": "INFO", "message": "{'url': '/speech/speech-to-text', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:57:39', 'duration': 4.881}"}
+{"timestamp": "2025-03-19 12:57:40,064", "level": "INFO", "message": "{'url': '/translate/translate', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:57:40', 'duration': 0.238}"}
+{"timestamp": "2025-03-19 12:57:42,057", "level": "INFO", "message": "{'url': '/speech/text-to-speech', 'method': 'POST', 'status_code': 200, 'date': '19/03/2025 12:57:42', 'duration': 1.99}"}
