@@ -22,11 +22,11 @@ const Home = () => {
     setLoading(true);
     try {
       // Speech-to-Text (STT)
-      const sttResponse = await api.post("/speech-to-text", formData);
+      const sttResponse = await api.post("/speech/speech-to-text", formData);
       setTranscription(sttResponse.data.transcription);
 
       // Translation
-      const translateResponse = await api.post("/translate", {
+      const translateResponse = await api.post("/translate/translate", {
         text: sttResponse.data.transcription,
         source_lang: sourceLang,
         target_lang: targetLang,
@@ -34,7 +34,7 @@ const Home = () => {
       setTranslatedText(translateResponse.data.translated_text);
 
       // Text-to-Speech (TTS)
-      const ttsResponse = await api.post("/text-to-speech", {
+      const ttsResponse = await api.post("/speech/text-to-speech", {
         input_text: translateResponse.data.translated_text,
       });
       setAudioUrl(ttsResponse.data.audio_url);

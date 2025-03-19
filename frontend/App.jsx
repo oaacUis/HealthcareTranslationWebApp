@@ -1,90 +1,70 @@
 import { useState } from "react";
-import TranscriptDisplay from "./components/TranscriptDisplay";
+import { getAuthToken, transcribeAudio, translateText, textToSpeech } from "./services/api";
 import LanguageSelector from "./components/LanguageSelector";
+import TranscriptDisplay from "./components/TranscriptDisplay";
 import SpeakButton from "./components/SpeakButton";
-import api from "./services/api";
-import "./styles/global.css";
 
 function App() {
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
-  const [transcription, setTranscription] = useState("");
-  const [translatedText, setTranslatedText] = useState("");
-  const [audioUrl, setAudioUrl] = useState(null);
+    const [token, setToken] = useState(null);
+    const [transcription, setTranscription] = useState("");
+    const [translatedText, setTranslatedText] = useState("");
+    const [audioBlob, setAudioBlob] = useState(null);
+    const [sourceLang, setSourceLang] = useState("auto");
+    const [targetLang, setTargetLang] = useState("en");
 
-  const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
-  };
+    // Obtener el token de autenticación
+    const handleLogin = async () => {
+        const credentials = { username: "test", password: "1234" }; // Ajustar con credenciales reales
+        const userToken = await getAuthToken(credentials);
+        setToken(userToken);
+    };
 
-  const handleFileUpload = async (event) => {
-    const file = event.target.files[0];
-    if (!file) return;
+    // Procesar transcripción de audio
+    const handleTranscription = async (file) => {
+        if (!token) return alert("Please log in first");
+        const result = await transcribeAudio(file, token);
+        setTranscription(result);
+    };
 
-    const formData = new FormData();
-    formData.append("audio_file", file);
+    // Traducir el texto transcrito
+    const handleTranslation = async () => {
+        if (!transcription) return alert("No text to translate");
+        const result = await translateText(transcription, sourceLang, targetLang, token);
+        setTranslatedText(result);
+    };
 
-    try {
-      const response = await api.post("/speech-to-text", formData);
-      setTranscription(response.data.transcription);
-    } catch (error) {
-      console.error("Error transcribing audio:", error);
-    }
-  };
+    // Convertir texto traducido en audio
+    const handleTTS = async () => {
+        if (!translatedText) return alert("No text to convert");
+        const audio = await textToSpeech(translatedText, token);
+        setAudioBlob(audio);
+    };
 
-  const handleTranslate = async () => {
-    try {
-      const response = await api.post("/translate", {
-        text: transcription,
-        source_lang: "auto",
-        target_lang: selectedLanguage,
-      });
-      setTranslatedText(response.data.translated_text);
-    } catch (error) {
-      console.error("Error translating text:", error);
-    }
-  };
+    return (
+        <div>
+            <h1>Medical AI Translator</h1>
+            <button onClick={handleLogin}>Login</button>
 
-  const handleTextToSpeech = async () => {
-    try {
-      const response = await api.post("/text-to-speech", {
-        input_text: translatedText,
-      });
-      setAudioUrl(response.data.audio_url);
-    } catch (error) {
-      console.error("Error generating speech:", error);
-    }
-  };
+            <LanguageSelector
+                sourceLang={sourceLang}
+                targetLang={targetLang}
+                setSourceLang={setSourceLang}
+                setTargetLang={setTargetLang}
+            />
 
-  return (
-    <div className="app-container">
-      <h1>Healthcare Translation App</h1>
-      
-      <div className="upload-section">
-        <input type="file" accept="audio/*" onChange={handleFileUpload} />
-      </div>
+            <input type="file" onChange={(e) => handleTranscription(e.target.files[0])} />
+            <button onClick={handleTranslation}>Translate</button>
+            <button onClick={handleTTS}>Convert to Speech</button>
 
-      <TranscriptDisplay text={transcription} />
+            <TranscriptDisplay transcription={transcription} translatedText={translatedText} />
 
-      <LanguageSelector
-        selectedLanguage={selectedLanguage}
-        onLanguageChange={handleLanguageChange}
-      />
-
-      <button onClick={handleTranslate} disabled={!transcription}>
-        Translate
-      </button>
-
-      <TranscriptDisplay text={translatedText} />
-
-      <button onClick={handleTextToSpeech} disabled={!translatedText}>
-        Convert to Speech
-      </button>
-
-      {audioUrl && <SpeakButton audioUrl={audioUrl} />}
-    </div>
-  );
+            {audioBlob && <SpeakButton audioBlob={audioBlob} />}
+        </div>
+    );
 }
 
 export default App;
+
 
 // next.config.js
 //module.exports = {
