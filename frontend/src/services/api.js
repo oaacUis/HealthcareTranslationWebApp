@@ -1,35 +1,39 @@
-import axios from "axios";
-
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://127.0.0.1:8000";
 
-// Obtener Token de Autenticación
+// Get auth token
 export const getAuthToken = async (credentials) => {
     try {
+        const formData = new URLSearchParams();
+        formData.append("username", credentials.username);
+        formData.append("password", credentials.password);
+
         const response = await fetch(`${API_BASE_URL}/auth/token`, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(credentials),
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: formData,
         });
 
-        if (!response.ok) {
-            throw new Error("Error fetching authentication token");
-        }
-
         const data = await response.json();
-        return data.token;
+        return data.access_token;
     } catch (error) {
         console.error("Auth Error:", error);
         return null;
     }
 };
 
-// Enviar Audio para Transcripción (STT)
+// (STT)
 export const transcribeAudio = async (audioFile, token) => {
     try {
+        console.log("Enviando audio a:", `${API_BASE_URL}/speech/speech-to-text`);
+        console.log("Token:", token);
+        console.log("Archivo:", audioFile)
+
         const formData = new FormData();
         formData.append("audio_file", audioFile);
 
-        const response = await fetch(`${API_BASE_URL}/stt`, {
+        const response = await fetch(`${API_BASE_URL}/speech/speech-to-text`, {
             method: "POST",
             headers: { Authorization: `Bearer ${token}` },
             body: formData,
@@ -47,10 +51,10 @@ export const transcribeAudio = async (audioFile, token) => {
     }
 };
 
-// Traducir Texto (Translation)
+// (Translation)
 export const translateText = async (text, sourceLang, targetLang, token) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/translate`, {
+        const response = await fetch(`${API_BASE_URL}/translate/translate`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -75,10 +79,10 @@ export const translateText = async (text, sourceLang, targetLang, token) => {
     }
 };
 
-// Convertir Texto en Audio (TTS)
+// (TTS)
 export const textToSpeech = async (text, token) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/tts`, {
+        const response = await fetch(`${API_BASE_URL}/speech/text-to-speech`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -91,7 +95,11 @@ export const textToSpeech = async (text, token) => {
             throw new Error("Error during text-to-speech conversion");
         }
 
-        return await response.blob(); // Devuelve un blob para reproducción de audio
+        const audioBlob = await response.blob();  // Conv to a Blob
+        const audioUrl = URL.createObjectURL(audioBlob); // Create URL temporal
+
+        console.log("🎵 URL temporal creada:", audioUrl);
+        return audioUrl;  // Return URL temporal
     } catch (error) {
         console.error("TTS Error:", error);
         return null;

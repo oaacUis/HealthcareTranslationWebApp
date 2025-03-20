@@ -1,7 +1,12 @@
 # Ignore .env files
 backend/.env
 frontend/.env
-
+# Ignore node_modules directory
+node_modules/
+frontend/node_modules/
+frontend/.next/
+# Ignore temp files
+backend/app/temp/
 # Ignore virtual environment directory
 .venv/
 
