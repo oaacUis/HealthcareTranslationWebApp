@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/router";   
-import { getAuthToken, transcribeAudio, translateText, textToSpeech } from "../services/api";
+import { transcribeAudio, translateText, textToSpeech } from "../services/api";
 import LanguageSelector from "../components/LanguageSelector";
 import TranscriptDisplay from "../components/TranscriptDisplay";
 import SpeakButton from "../components/SpeakButton";
@@ -20,11 +20,11 @@ export default function Home() {
     useEffect(() => {
       const storedToken = localStorage.getItem("authToken");
       if (!storedToken) {
-          router.push("/login"); // Redirect to login page
+        router.replace("/login"); // Redirect to login page
       } else {
           setToken(storedToken);
       }
-    }, []);
+    }, [router]);
 
     // Process Audio File
     const handleTranscription = async (file) => {
