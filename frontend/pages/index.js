@@ -20,8 +20,9 @@ export default function Home() {
     useEffect(() => {
       const storedToken = localStorage.getItem("authToken");
       if (!storedToken) {
-        router.replace("/login"); // Redirect to login page
+        router.push("/login"); // Redirect to login page
       } else {
+          console.log("Token cargado:", storedToken);
           setToken(storedToken);
       }
     }, [router]);
