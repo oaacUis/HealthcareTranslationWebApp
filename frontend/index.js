@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/router";   
-import { transcribeAudio, translateText, textToSpeech } from "../services/api";
-import LanguageSelector from "../components/LanguageSelector";
-import TranscriptDisplay from "../components/TranscriptDisplay";
-import SpeakButton from "../components/SpeakButton";
+import { transcribeAudio, translateText, textToSpeech } from "./services/api";
+import LanguageSelector from "./components/LanguageSelector";
+import TranscriptDisplay from "./components/TranscriptDisplay";
+import SpeakButton from "./components/SpeakButton";
 
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
           console.log("Token cargado:", storedToken);
           setToken(storedToken);
       }
-    }, [router]);
+    }, []);
 
     // Process Audio File
     const handleTranscription = async (file) => {
