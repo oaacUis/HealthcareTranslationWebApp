@@ -453,3 +453,5 @@
 {"timestamp": "2025-03-21 02:50:10,681", "level": "INFO", "message": "{'url': '/speech/text-to-speech', 'method': 'POST', 'status_code': 200, 'date': '21/03/2025 02:50:10', 'duration': 1.977}"}
 {"timestamp": "2025-03-21 02:52:16,342", "level": "INFO", "message": "{'url': '/docs', 'method': 'GET', 'status_code': 200, 'date': '21/03/2025 02:52:16', 'duration': 0.001}"}
 {"timestamp": "2025-03-21 02:52:16,680", "level": "INFO", "message": "{'url': '/openapi.json', 'method': 'GET', 'status_code': 200, 'date': '21/03/2025 02:52:16', 'duration': 0.016}"}
+{"timestamp": "2025-03-21 03:20:04,888", "level": "INFO", "message": "Starting API..."}
+{"timestamp": "2025-03-21 03:20:05,000", "level": "INFO", "message": "Starting API..."}
