@@ -20,12 +20,17 @@ export default function Home() {
     console.log("Log dentro home, fuera useEffect");
     useEffect(() => {
       console.log("Log dentro home, dentro useEffect");
-      const storedToken = localStorage.getItem("authToken");
-      if (!storedToken) {
-        router.push("/login"); // Redirect to login page
-      } else {
-          console.log("Token cargado:", storedToken);
-          setToken(storedToken);
+  
+      // Ejecutar solo en el cliente
+      if (typeof window !== "undefined") {
+          const storedToken = localStorage.getItem("authToken");
+          
+          if (!storedToken) {
+              router.push("/login"); // Redirect to login page
+          } else {
+              console.log("Token cargado:", storedToken);
+              setToken(storedToken);
+          }
       }
     }, []);
 
