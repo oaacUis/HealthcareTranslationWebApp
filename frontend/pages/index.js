@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/router";   
-import { transcribeAudio, translateText, textToSpeech } from "./services/api";
-import LanguageSelector from "./components/LanguageSelector";
-import TranscriptDisplay from "./components/TranscriptDisplay";
-import SpeakButton from "./components/SpeakButton";
+import { transcribeAudio, translateText, textToSpeech } from "../services/api";
+import LanguageSelector from "../components/LanguageSelector";
+import TranscriptDisplay from "../components/TranscriptDisplay";
+import SpeakButton from "../components/SpeakButton";
 
 
 export default function Home() {
@@ -16,8 +16,10 @@ export default function Home() {
     const [audioBlob, setAudioBlob] = useState(null);
     const [sourceLang, setSourceLang] = useState("auto");
     const [targetLang, setTargetLang] = useState("en");
-
+    
+    console.log("Log dentro home, fuera useEffect");
     useEffect(() => {
+      console.log("Log dentro home, dentro useEffect");
       const storedToken = localStorage.getItem("authToken");
       if (!storedToken) {
         router.push("/login"); // Redirect to login page
