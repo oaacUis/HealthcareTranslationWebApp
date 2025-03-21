@@ -42,7 +42,8 @@ export default function Home() {
           return;
       }
       if (!token) return alert("Please log in first");
-      const result = await transcribeAudio(file, token);
+      const result = await transcribeAudio(file, token, sourceLang);
+      if (!result) return alert("Error transcribing audio");
       setTranscription(result);
     };
 

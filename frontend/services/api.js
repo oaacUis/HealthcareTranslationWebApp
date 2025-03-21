@@ -24,13 +24,15 @@ export const getAuthToken = async (credentials) => {
 };
 
 // (STT)
-export const transcribeAudio = async (audioFile, token) => {
+export const transcribeAudio = async (audioFile, token, languageCode = "es") => {
     try {
         console.log("Enviando audio a:", `${API_BASE_URL}/speech/speech-to-text`);
         console.log("Token:", token);
         console.log("Archivo:", audioFile)
 
         const formData = new FormData();
+        formData.append("use_openai", "false");
+        formData.append("language_code", languageCode);
         formData.append("audio_file", audioFile);
 
         const response = await fetch(`${API_BASE_URL}/speech/speech-to-text`, {
@@ -62,8 +64,8 @@ export const translateText = async (text, sourceLang, targetLang, token) => {
             },
             body: JSON.stringify({
                 text,
-                source_lang: sourceLang,
-                target_lang: targetLang,
+                src_lang: sourceLang,
+                dest_lang: targetLang,
             }),
         });
 

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
+from fastapi import APIRouter, UploadFile, File, HTTPException, Depends, Form
 from fastapi.responses import FileResponse
 from ..routers.auth import get_current_user
 from elevenlabs import VoiceSettings
@@ -42,9 +42,10 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 @router.post("/speech-to-text")
 async def speech_to_text(
+    use_openai: bool = Form(False),
+    language_code: str = Form("es"),
     audio_file: UploadFile = File(...),
     current_user: dict = Depends(get_current_user),
-    use_openai: bool = False
 ):
     """
     Handles speech-to-text transcription for an uploaded audio file.
@@ -72,7 +73,7 @@ async def speech_to_text(
             aai.settings.api_key = AII_API_KEY
             transcriber = aai.Transcriber()
             config = aai.TranscriptionConfig(
-                        language_code="es",
+                        language_code=language_code,
                         speech_model=aai.SpeechModel.nano
                         )
 

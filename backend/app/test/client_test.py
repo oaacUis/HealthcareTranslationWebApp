@@ -49,13 +49,22 @@ print("="*50)
 
 
 # Stt endpoint
-audio_file_path = "input_voice_test.mp3"
+audio_file_path = "input_voice_test.m4a"
 
 if os.path.exists(audio_file_path):
     with open(audio_file_path, "rb") as file:
-        files = {"audio_file": file}
+
+        files = {
+            "audio_file": file
+        }
+        stt_input_data = {
+            "use_openai": "false",  # Note: Booleans should be strings in form data
+            "language_code": "es"
+        }
         stt_response = requests.post(base_url + endpoints["stt"],
-                                     files=files, headers=headers)
+                                     data=stt_input_data,
+                                     files=files,
+                                     headers=headers)
         print(f"Status Code: {stt_response.status_code}")
         print(f"Response: {stt_response.json()}")
         print("="*50)
@@ -64,8 +73,8 @@ else:
 
 translate_input_data = {
     "text": stt_response.json().get("transcription"),
-    "source_lang": "es",
-    "target_lang": "en"
+    "src_lang": "es",
+    "dest_lang": "fr"
 }
 
 # Translate text
